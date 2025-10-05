@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Tutorials Hub - Image & Video Editing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-palette"></i>
+                <span>Creative Tutorials Hub</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#image-editing" class="nav-link">Image Editing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#video-editing" class="nav-link">Video Editing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#motion-graphics" class="nav-link">Motion Graphics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resources" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tips" class="nav-link">Tips & Tricks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-bg">
+            <video autoplay muted loop playsinline>
+                <source src="https://cdn.pixabay.com/vimeo/1234567890/creative-12345.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Master Creative Editing</h1>
+                <p class="hero-subtitle">Step-by-step tutorials for image editing, video production, and motion graphics. Learn from beginner to pro with our comprehensive guides.</p>
+                <div class="hero-buttons">
+                    <a href="#image-editing" class="btn btn-primary">Start Learning</a>
+                    <a href="#resources" class="btn btn-secondary">Get Resources</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop&crop=center" alt="Image Editing" class="card-image">
+                        <div class="card-content">
+                            <i class="fas fa-image"></i>
+                            <span>Image Editing</span>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=300&h=200&fit=crop&crop=center" alt="Video Editing" class="card-image">
+                        <div class="card-content">
+                            <i class="fas fa-video"></i>
+                            <span>Video Editing</span>
+                        </div>
+                    </div>
+                    <div class="card card-3">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=300&h=200&fit=crop&crop=center" alt="Motion Graphics" class="card-image">
+                        <div class="card-content">
+                            <i class="fas fa-cube"></i>
+                            <span>Motion Graphics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Editing Section -->
+    <section id="image-editing" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Image Editing Tutorials</h2>
+                <p class="section-subtitle">Master the art of digital image manipulation with our comprehensive guides</p>
+            </div>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <div class="tutorial-preview">
+                        <img src="https://images.unsplash.com/photo-1637519290541-0a12b3185485?q=80&w=909&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photoshop Tutorial" class="tutorial-image">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="tutorial-duration">15:30</div>
+                    </div>
+                    <div class="tutorial-header">
+                        <div class="software-logo photoshop">
+                            <i class="fab fa-adobe"></i>
+                        </div>
+                        <h3>Adobe Photoshop</h3>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-levels">
+                            <span class="level beginner">Beginner</span>
+                            <span class="level intermediate">Intermediate</span>
+                            <span class="level advanced">Advanced</span>
+                        </div>
+                        <ul class="tutorial-list">
+                            <li><a href="https://youtu.be/xTzvQkOll2U?si=4yIypSTNHq0-v7gf" class="tutorial-link" onclick="showVideoModal('Getting Started with Layers', '<iframe width="695" height="391" src="https://www.youtube.com/embed/xTzvQkOll2U" title="Photoshop for Complete Beginners | Lesson 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>')">Getting Started with Layers</a></li>
+                            <li><a href="#" class="tutorial-link" onclick="showVideoModal('Color Correction Techniques', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">Color Correction Techniques</a></li>
+                            <li><a href="#" class="tutorial-link" onclick="showVideoModal('Advanced Masking', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">Advanced Masking</a></li>
+                            <li><a href="#" class="tutorial-link" onclick="showVideoModal('Retouching Portraits', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">Retouching Portraits</a></li>
+                            <li><a href="#" class="tutorial-link" onclick="showVideoModal('Creating Digital Art', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">Creating Digital Art</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-preview">
+                        <img src="https://images.unsplash.com/photo-1635220035691-9473364b4476?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="tutorial-duration">12:45</div>
+                    </div>
+                    <div class="tutorial-header">
+                        <div class="software-logo gimp">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>GIMP</h3>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-levels">
+                            <span class="level beginner">Beginner</span>
+                            <span class="level intermediate">Intermediate</span>
+                        </div>
+                        <ul class="tutorial-list">
+                            <li><a href="#" class="tutorial-link">GIMP Interface Overview</a></li>
+                            <li><a href="#" class="tutorial-link">Basic Photo Editing</a></li>
+                            <li><a href="#" class="tutorial-link">Working with Filters</a></li>
+                            <li><a href="#" class="tutorial-link">Creating Graphics</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-preview">
+                        <img src="https://businesslink.ca/wp-content/uploads/2024/04/HeaderCover-Blogs-min-2-scaled-1.webp">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="tutorial-duration">8:20</div>
+                    </div>
+                    <div class="tutorial-header">
+                        <div class="software-logo canva">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Canva</h3>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-levels">
+                            <span class="level beginner">Beginner</span>
+                        </div>
+                        <ul class="tutorial-list">
+                            <li><a href="#" class="tutorial-link">Design Basics</a></li>
+                            <li><a href="#" class="tutorial-link">Templates & Branding</a></li>
+                            <li><a href="#" class="tutorial-link">Social Media Graphics</a></li>
+                            <li><a href="#" class="tutorial-link">Presentations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Editing Section -->
+    <section id="video-editing" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Video Editing Tutorials</h2>
+                <p class="section-subtitle">Create stunning videos with professional editing techniques</p>
+            </div>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <div class="tutorial-preview">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=250&fit=crop&crop=center" alt="Premiere Pro Tutorial" class="tutorial-image">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="tutorial-duration">22:15</div>
+                    </div>
+                    <div class="tutorial-header">
+                        <div class="software-logo premiere">
+                            <i class="fab fa-adobe"></i>
+                        </div>
+                        <h3>Adobe Premiere Pro</h3>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-levels">
+                            <span class="level beginner">Beginner</span>
+                            <span class="level intermediate">Intermediate</span>
+                            <span class="level advanced">Advanced</span>
+                        </div>
+                        <ul class="tutorial-list">
+                            <li><a href="#" class="tutorial-link">Project Setup & Import</a></li>
+                            <li><a href="#" class="tutorial-link">Basic Cutting & Trimming</a></li>
+                            <li><a href="#" class="tutorial-link">Color Grading</a></li>
+                            <li><a href="#" class="tutorial-link">Audio Editing</a></li>
+                            <li><a href="#" class="tutorial-link">Advanced Effects</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-preview">
+                        <img src="https://images.unsplash.com/photo-1667906962043-a3e82dea23a3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="DaVinci Resolve Tutorial" class="tutorial-image">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="tutorial-duration">18:30</div>
+                    </div>
+                    <div class="tutorial-header">
+                        <div class="software-logo davinci">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>DaVinci Resolve</h3>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-levels">
+                            <span class="level intermediate">Intermediate</span>
+                            <span class="level advanced">Advanced</span>
+                        </div>
+                        <ul class="tutorial-list">
+                            <li><a href="#" class="tutorial-link">Professional Color Grading</a></li>
+                            <li><a href="#" class="tutorial-link">Multi-Camera Editing</a></li>
+                            <li><a href="#" class="tutorial-link">Audio Post-Production</a></li>
+                            <li><a href="#" class="tutorial-link">Fusion VFX</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-preview">
+                        <img src="https://img.fixthephoto.com/blog/UserFiles/Image/222/5/39/14/shotcut-video-editor-editing.png">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="tutorial-duration">14:20</div>
+                    </div>
+                    <div class="tutorial-header">
+                        <div class="software-logo shotcut">
+                            <i class="fas fa-scissors"></i>
+                        </div>
+                        <h3>Shotcut</h3>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-levels">
+                            <span class="level beginner">Beginner</span>
+                            <span class="level intermediate">Intermediate</span>
+                        </div>
+                        <ul class="tutorial-list">
+                            <li><a href="#" class="tutorial-link">Getting Started</a></li>
+                            <li><a href="#" class="tutorial-link">Basic Editing Workflow</a></li>
+                            <li><a href="#" class="tutorial-link">Transitions & Effects</a></li>
+                            <li><a href="#" class="tutorial-link">Export Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motion Graphics Section -->
+    <section id="motion-graphics" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Motion Graphics Tutorials</h2>
+                <p class="section-subtitle">Bring your designs to life with animation and motion graphics</p>
+            </div>
+            
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <div class="tutorial-preview">
+                        <img src="https://cdn.prod.website-files.com/6461dd519a5f8f48f550b20a/66221558c697c3183b70cea6_after%20effects%20api%20thumb.jpg" alt="After Effects Tutorial" class="tutorial-image">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="tutorial-duration">25:40</div>
+                    </div>
+                    <div class="tutorial-header">
+                        <div class="software-logo after-effects">
+                            <i class="fab fa-adobe"></i>
+                        </div>
+                        <h3>Adobe After Effects</h3>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-levels">
+                            <span class="level beginner">Beginner</span>
+                            <span class="level intermediate">Intermediate</span>
+                            <span class="level advanced">Advanced</span>
+                        </div>
+                        <ul class="tutorial-list">
+                            <li><a href="#" class="tutorial-link">Introduction to Keyframes</a></li>
+                            <li><a href="#" class="tutorial-link">Text Animation</a></li>
+                            <li><a href="#" class="tutorial-link">Shape Layers & Masks</a></li>
+                            <li><a href="#" class="tutorial-link">3D Space & Cameras</a></li>
+                            <li><a href="#" class="tutorial-link">Advanced Compositing</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-preview">
+                        <img src="https://www.blender.org/wp-content/uploads/2019/07/blender_render-1280x720.jpg?x12104" alt="Blender Tutorial" class="tutorial-image">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="tutorial-duration">30:15</div>
+                    </div>
+                    <div class="tutorial-header">
+                        <div class="software-logo blender">
+                            <i class="fab fa-blender"></i>
+                        </div>
+                        <h3>Blender</h3>
+                    </div>
+                    <div class="tutorial-content">
+                        <div class="tutorial-levels">
+                            <span class="level beginner">Beginner</span>
+                            <span class="level intermediate">Intermediate</span>
+                            <span class="level advanced">Advanced</span>
+                        </div>
+                        <ul class="tutorial-list">
+                            <li><a href="#" class="tutorial-link">3D Modeling Basics</a></li>
+                            <li><a href="#" class="tutorial-link">Animation Principles</a></li>
+                            <li><a href="#" class="tutorial-link">Materials & Shading</a></li>
+                            <li><a href="#" class="tutorial-link">Rendering & Compositing</a></li>
+                            <li><a href="#" class="tutorial-link">Motion Graphics in Blender</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resources & Downloads</h2>
+                <p class="section-subtitle">Essential tools, plugins, and assets for your creative journey</p>
+            </div>
+            
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3><i class="fas fa-download"></i> Software Downloads</h3>
+                    <div class="resource-links">
+                        <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="resource-link">
+                            <i class="fab fa-adobe"></i>
+                            <span>Adobe Photoshop</span>
+                        </a>
+                        <a href="https://www.gimp.org/downloads/" target="_blank" class="resource-link">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>GIMP (Free)</span>
+                        </a>
+                        <a href="https://www.canva.com/" target="_blank" class="resource-link">
+                            <i class="fas fa-palette"></i>
+                            <span>Canva</span>
+                        </a>
+                        <a href="https://www.adobe.com/products/premiere.html" target="_blank" class="resource-link">
+                            <i class="fab fa-adobe"></i>
+                            <span>Adobe Premiere Pro</span>
+                        </a>
+                        <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" class="resource-link">
+                            <i class="fas fa-film"></i>
+                            <span>DaVinci Resolve (Free)</span>
+                        </a>
+                        <a href="https://www.shotcut.org/download/" target="_blank" class="resource-link">
+                            <i class="fas fa-scissors"></i>
+                            <span>Shotcut (Free)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3><i class="fas fa-puzzle-piece"></i> Plugins & Extensions</h3>
+                    <div class="resource-links">
+                        <a href="https://fixthephoto.com/free-photoshop-plugins.html" class="resource-link">
+                            <i class="fas fa-magic"></i>
+                            <span>Photoshop Plugins</span>
+                        </a>
+                        <a href="https://elements.envato.com/lp/unlimited-premiere-pro-templates/?adposition=&gad_source=1&gad_campaignid=12128199263&gbraid=0AAAAADclSXlAOgW-UPke2nfRFX6ceQKvq&gclid=CjwKCAjwi4PHBhA-EiwAnjTHufpPFTI5T6LdEWqOB36T3MbMMWGYm68bvlgfZ6S9yYalrM5DHU63LRoCzSEQAvD_BwE" class="resource-link">
+                            <i class="fas fa-video"></i>
+                            <span>Premiere Pro Extensions</span>
+                        </a>
+                        <a href="https://fixthephoto.com/after-effects-scripts.html" class="resource-link">
+                            <i class="fas fa-cube"></i>
+                            <span>After Effects Scripts</span>
+                        </a>
+                        <a href="https://extensions.blender.org/add-ons/" class="resource-link">
+                            <i class="fas fa-cog"></i>
+                            <span>Blender Add-ons</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3><i class="fas fa-folder"></i> Asset Libraries</h3>
+                    <div class="resource-links">
+                        <a href="https://unsplash.com/" class="resource-link">
+                            <i class="fas fa-image"></i>
+                            <span>Stock Photos</span>
+                        </a>
+                        <a href="https://pixabay.com/music/" class="resource-link">
+                            <i class="fas fa-music"></i>
+                            <span>Royalty-Free Music</span>
+                        </a>
+                        <a href="https://www.pexels.com/videos/" class="resource-link">
+                            <i class="fas fa-video"></i>
+                            <span>Video Footage</span>
+                        </a>
+                        <a href="https://fonts.google.com/" class="resource-link">
+                            <i class="fas fa-font"></i>
+                            <span>Fonts & Typography</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Tricks Section -->
+    <section id="tips" class="section tips-section">
+        <div class="tips-bg">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1920&h=1080&fit=crop&crop=center" alt="Creative Workspace" class="tips-bg-image">
+            <div class="tips-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tips & Tricks</h2>
+                <p class="section-subtitle">Proven shortcuts and workflow optimizations from industry experts</p>
+            </div>
+            
+            <div class="tips-container">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Keyboard Shortcuts</h3>
+                    <p>Master essential shortcuts for Photoshop, Premiere Pro, and After Effects to speed up your workflow.</p>
+                    <a href="#" class="tip-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Workflow Optimization</h3>
+                    <p>Organize your projects, manage files efficiently, and create templates for consistent results.</p>
+                    <a href="#" class="tip-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Performance Tips</h3>
+                    <p>Optimize your computer settings and software preferences for maximum performance.</p>
+                    <a href="#" class="tip-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Color Theory</h3>
+                    <p>Understand color relationships, create harmonious palettes, and master color grading techniques.</p>
+                    <a href="#" class="tip-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions or suggestions? We'd love to hear from you!</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>support@creativetutorials.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>123 Creative Street, Design City, DC 12345</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-palette"></i>
+                        <span>Creative Tutorials Hub</span>
+                    </div>
+                    <p>Empowering creatives with comprehensive tutorials and resources for image editing, video production, and motion graphics.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#image-editing">Image Editing</a></li>
+                        <li><a href="#video-editing">Video Editing</a></li>
+                        <li><a href="#motion-graphics">Motion Graphics</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Tutorial Requests</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Creative Tutorials Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
